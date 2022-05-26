@@ -1,11 +1,10 @@
 # ridvancalik
 
-This template should help get you started developing with Vue 3 in Vite.
+***This is my web site make with vue.js***
 
-![test](Screenshot (7).png)
-## Customize configuration
+![LightMode](ss2.png)
+![DarkMode](ss1.png)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
