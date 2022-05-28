@@ -12,7 +12,7 @@
                 <router-link to="/contact">İletişim</router-link>
             </li>
         </ul>
-        <i @click="toogleModal()" style="font-size:48px;" class="material-icons hamburger">menu</i>
+        <i @click="toogleModal()" style="font-size:48px; cursor:pointer;" class="material-icons hamburger">menu</i>
 
 
     </div>
@@ -82,6 +82,7 @@ a {
 }
 
 #modal {
+
     left: 0%;
     top: 0;
     position: fixed;
