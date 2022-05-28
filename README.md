@@ -1,14 +1,10 @@
 # ridvancalik
 
-This template should help get you started developing with Vue 3 in Vite.
+***This is my web site make with vue.js***
 
-## Recommended IDE Setup
+![LightMode](ss2.png)
+![DarkMode](ss1.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
