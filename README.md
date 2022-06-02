@@ -3,9 +3,9 @@
 ***This is my web site make with vue.js***
 
 > light theme
-![LightMode](ss2.png)
+![LightMode](ss22.png)
 > dark theme
-![DarkMode](ss1.png)
+![DarkMode](ss11.png)
 
 
 ## Project Setup
