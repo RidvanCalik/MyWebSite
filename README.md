@@ -1,4 +1,4 @@
-# ridvancalik
+# **Rıdvan Çalık**
 
 ***This is my web site make with vue.js***
 
