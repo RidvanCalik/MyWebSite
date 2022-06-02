@@ -1,31 +1,42 @@
 <script setup>
 function dowloadCV() {
-  window.open("../public/ridvancalikCV.pdf");
+  window.open("/ridvancalikCV.pdf");
 }
 </script>
 <template>
   <div class="row">
     <div class="left-side">
       <img src="@/assets/profile2.jpg">
-      <button @click="dowloadCV">CV indir</button>
+      <a @click="dowloadCV()">CV indir</a>
 
     </div>
     <div class="right-side">
       <h1>Frontend geliştirici</h1>
-      <h2>Frontend geliştirici</h2>
-      <hr>
-      <h2>Bildiğim ve Öğreniyor olduğum teknolojiler</h2>
-      <ul>
+      <br>
+      <h3>&emsp;&emsp;Şehit Büyük Elçi İsmail Erez MTAL' de Bilişim teknolojileri & Web programala alanından mezun
+        olduktan
+        sonra
+        alaylı olarak yazılım kariyerime devam etmekteyim</h3>
+      <br>
+      <h2>Sertifikalarım</h2>
+      <div>&emsp;&emsp;<a target="_blank"
+          href="https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/ridvancalik/Web%20Programlama/101">Web
+          Programlama 101</a></div>
+      <br>
+
+      <h2>
+        Bildiğim ve Öğreniyor olduğum teknolojiler</h2>
+      <nav>
         <li>HTML</li>
         <li>CSS</li>
         <li>JS</li>
-
-      </ul>
-      <ul>
+        <li>VUE.JS</li>
+        <li>REACT.JS</li>
+        <li>BOOTSTRAP</li>
         <li>MYSQL</li>
         <li>PHP</li>
         <li>FLUTTER</li>
-      </ul>
+      </nav>
     </div>
   </div>
 </template>
@@ -52,34 +63,55 @@ function dowloadCV() {
 }
 
 .right-side {
-
+  padding: 0 150px;
   height: 100%;
-  display: grid;
+  display: flex;
 
   justify-content: center;
-  align-items: center;
 
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 5% 1% 15% 29%;
+  flex-direction: column;
+  text-align: left;
+}
+
+.right-side nav {
+
+  flex-wrap: wrap;
+  overflow: hidden;
+  display: flex;
+}
+
+.right-side li {
+  cursor: default;
   text-align: center;
+  min-width: 90px;
+  list-style: none;
+  border-radius: 500px;
+  padding: .3em;
+  margin: .4em;
+
+  transition: all 200ms;
+  color: var(--byridvan);
+  border: 2px solid green;
 }
 
-.right-side>* {
-  grid-column-start: 1;
-  grid-column-end: 3;
-
+.right-side li:hover {
+  color: whitesmoke;
 }
 
-.right-side :nth-last-child(1) {
-  grid-column-start: 2;
-  grid-column-end: 3;
+.right-side a {
+  text-decoration: none;
 
+  margin: 0.3em;
+  color: green;
+  border-left: 2px solid green;
+  transition: border 400ms;
 }
 
-.right-side :nth-last-child(2) {
-  grid-column-start: 1;
-  grid-column-end: 2;
+.right-side a:hover {
+
+  border-left: 15px solid green;
 }
+
 
 ul {
   list-style: none;
@@ -97,20 +129,28 @@ ul {
 
 }
 
-button {
+.left-side a {
   box-shadow: none;
   border: none;
-  max-width: 50%;
+  max-width: 60%;
   text-align: center;
-  margin: 20px;
-  padding: 25px;
+  margin: 60px;
+
+  font-size: 15px;
+  border-left: 2px solid green;
+
   display: inline-block;
-  line-height: 10px;
-  border-radius: 50px;
-  transition: background-color 700ms;
-  background-color: green;
+  background-color: none;
   text-decoration: none;
-  color: white;
+  background-color: var(--color-background);
+  cursor: pointer;
+  color: green;
+  transition: all 400ms;
+}
+
+.left-side a:hover {
+  border-left: 15px solid green;
+
 }
 
 @media (max-width: 1024px) {
@@ -118,14 +158,24 @@ button {
 
     grid-template-columns: 50% 50%;
   }
+
+  .right-side {
+    padding: 0 10px;
+
+  }
 }
 
 @media (max-width: 846px) {
   .row {
-    min-height: 200%;
+    min-height: 130%;
     grid-template-columns: 90%;
-    grid-template-rows: 70% 50%;
+    grid-template-rows: 70% 60%;
 
+
+  }
+
+  .right-side {
+    padding: 0 10px;
 
   }
 }

@@ -47,7 +47,7 @@ function toogleModal() {
 
 <style scoped>
 a {
-    color: white;
+    color: var(--byridvan);
     text-decoration: none;
 }
 
@@ -109,18 +109,15 @@ a {
 
 .nav-md li {
     margin: 20px;
-    padding: 25px;
+    padding: 0 40px;
     display: inline-block;
-    line-height: 10px;
-    border-radius: 50px;
-    transition: background-color 700ms;
+    cursor: pointer;
+
+    border-bottom: 2px solid green;
+
+    transition: all 700ms;
 }
 
-.nav-md li:hover {
-    cursor: pointer;
-    color: white;
-    background-color: green;
-}
 
 @media (max-width: 846px) {
     .nav-md {
