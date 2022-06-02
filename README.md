@@ -2,7 +2,9 @@
 
 ***This is my web site make with vue.js***
 
+> light theme
 ![LightMode](ss2.png)
+> dark theme
 ![DarkMode](ss1.png)
 
 
