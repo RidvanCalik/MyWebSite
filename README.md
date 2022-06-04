@@ -9,8 +9,10 @@
 
 > light theme
 ![LightMode](ss1.png)
+![LightMode](ss3.png)
 > dark theme
 ![DarkMode](ss2.png)
+![LightMode](ss4.png)
 
 
 ## Project Setup
