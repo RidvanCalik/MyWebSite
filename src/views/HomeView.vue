@@ -169,7 +169,7 @@ ul {
   .row {
     min-height: 130%;
     grid-template-columns: 90%;
-    grid-template-rows: 70% 60%;
+    grid-template-rows: 50% 90%;
 
 
   }

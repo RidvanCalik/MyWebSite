@@ -26,4 +26,11 @@ import Header from './components/Header.vue';
   grid-template-columns: 100%;
   grid-template-rows: 10% 90%;
 }
+
+@media (max-width: 846px) {
+  #app {
+    grid-template-rows: 10% 100%;
+  }
+
+}
 </style>
