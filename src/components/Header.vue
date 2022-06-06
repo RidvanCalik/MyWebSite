@@ -11,7 +11,9 @@
             <li>
                 <router-link to="/contact">İletişim</router-link>
             </li>
+            <img style="cursor:pointer" @click="toogleTheme" :src="themeSVG" class="toogleTheme" />
         </ul>
+
         <i @click="toogleModal()" style="font-size:48px; cursor:pointer;" class="material-icons hamburger">menu</i>
 
 
@@ -27,6 +29,9 @@
         <h1>
             <router-link to="/contact">İletişim</router-link>
         </h1>
+        <h1>
+            <img style="cursor:pointer" @click="toogleTheme" :src="themeSVG" class="toogleTheme" />
+        </h1>
 
 
 
@@ -37,8 +42,34 @@
 
 <script setup>
 
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 var modal = ref(false);
+
+var themeSVG = ref();
+var darkTheme = ref(false);
+
+function toogleTheme() {
+
+    themeSVG.value = !darkTheme.value ? "./night.svg" : "./light.svg";
+    document.documentElement.className = darkTheme.value ? "theme-light" : "theme-dark";
+    darkTheme.value = !darkTheme.value;
+
+
+}
+
+onMounted(() => {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        darkTheme.value = true;
+        document.documentElement.className = "theme-dark";
+        themeSVG.value = "./night.svg";
+    } else {
+        darkTheme.value = false;
+        document.documentElement.className = "theme-light";
+        themeSVG.value = "./light.svg";
+    }
+
+})
+
 
 function toogleModal() {
     modal.value = !modal.value;
@@ -46,6 +77,12 @@ function toogleModal() {
 </script>
 
 <style scoped>
+.toogleTheme {
+    width: 50px;
+    background-color: transparent;
+    border: none;
+}
+
 a {
     color: var(--byridvan);
     text-decoration: none;

@@ -167,7 +167,7 @@ ul {
 
 @media (max-width: 846px) {
   .row {
-    min-height: 130%;
+    min-height: 150%;
     grid-template-columns: 90%;
     grid-template-rows: 50% 90%;
 
